@@ -1,6 +1,8 @@
 # MAGIC-TOWER-JS
 HTML5 Canvas版的魔塔游戏
 
+在线试玩地址：https://m8705.github.io/MAGIC-TOWER-JS/
+
 一个很经典，又有点考验智慧的小游戏
 
 很多人小时候应该都在学习机或者手机上玩过

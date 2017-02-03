@@ -8,7 +8,7 @@
 	redKey:0,
 	sword:0,//0~5
 	shield:0,//0~5
-	item:[5,9,10,11,12,13,14,15,16,17,18,19,20,21,32],
+	item:[],
 	floor:1,//所处的楼层
 	wentFloor:[1],
 	isTalking:0,
