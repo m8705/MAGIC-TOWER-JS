@@ -10,7 +10,7 @@ $(document).ready(function(){
 			if(isPicLoaded){
 				break;
 			}
-			else if( (Date.now()-past)/1000 > 1 ){//防止等待时间过长
+			else if( (Date.now()-past)/1000 > 5 ){//防止等待时间过长
 				break;
 			}
 		}
