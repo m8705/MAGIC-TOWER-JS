@@ -1,34 +1,12 @@
 ﻿/*负责游戏的启动和初始化*/
 
-var isPicLoaded = 0;
+//var isPicLoaded = 0; 实际上，图片加载的问题已经不再重要，除非你快速刷新，不然真的看不出来，因此也不再需要 isPicLoaded
 var picState = 0;
 
 $(document).ready(function(){
-	
-		var past = Date.now();
-		while(!isPicLoaded){//等待图片加载完毕
-			if(isPicLoaded){
-				break;
-			}
-			else if( (Date.now()-past)/1000 > 5 ){//防止等待时间过长
-				break;
-			}
-		}
 		
-		$("#canvas").fadeIn("slow");//过场，拖延时间
-		
-		if(!isPicLoaded){//快速多次刷新就可能出现这种情况
-			var c = $("canvas")[0].getContext("2d");
-			c.font = "24px Arial";
-			c.fillStyle = "black";
-			c.textBaseline = "middle";
-			var str = "图片资源加载出错，请刷新页面:3";
-			var width = c.measureText(str).width;
-			c.fillText(str, ($("canvas")[0].width-width)/2, ($("canvas")[0].height/2)-12 );//居中显示提示文本
-		}
-		else{
-			initialize();
-		}
+	$("#canvas").fadeIn("slow");//过场，拖延时间
+	initialize();
 	
 });
 
